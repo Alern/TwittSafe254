@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ttrizza.twittsafe.MainActivity"
+    android:background="@drawable/bluebg">
+
+
+    <com.twitter.sdk.android.core.identity.TwitterLoginButton
+        android:id="@+id/twitter_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonFire"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/buttonFire"
+        android:layout_alignEnd="@+id/buttonFire" />
+
+    <Button
+        android:drawableTop="@drawable/iconsawa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="FIRE"
+        android:id="@+id/buttonFire"
+        android:layout_above="@+id/buttonFlood"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="What&apos;s your emergency?"
+        android:id="@+id/textView"
+        android:textColor="#f90e0e"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:drawableTop="@drawable/water3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Floods"
+        android:id="@+id/buttonFlood"
+        android:layout_above="@+id/buttonAccident"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/buttonFire"
+        android:layout_alignEnd="@+id/buttonFire" />
+
+    <Button
+        android:drawableTop="@drawable/acident"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACCIDENT"
+        android:id="@+id/buttonAccident"
+        android:layout_above="@+id/buttonRiots"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/buttonFlood"
+        android:layout_alignEnd="@+id/buttonFlood" />
+
+    <Button
+        android:drawableTop="@drawable/people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RIOTS"
+        android:id="@+id/buttonRiots"
+        android:layout_above="@+id/buttonRob"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/buttonAccident"
+        android:layout_alignEnd="@+id/buttonAccident" />
+
+    <Button
+        android:drawableTop="@drawable/bird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WILDLIFE ON THE LOOSE"
+        android:id="@+id/buttonWild"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/buttonRob"
+        android:layout_alignEnd="@+id/buttonRob" />
+
+    <Button
+        android:drawableTop="@drawable/thief"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ROBBERY"
+        android:id="@+id/buttonRob"
+        android:layout_above="@+id/buttonWild"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/buttonRiots"
+        android:layout_alignEnd="@+id/buttonRiots" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/twitter_login_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/logoz" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/buttonWild"
+        android:layout_alignRight="@+id/twitter_login_button"
+        android:layout_alignEnd="@+id/twitter_login_button" />
+
+
+</RelativeLayout>
